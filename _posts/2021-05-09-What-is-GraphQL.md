@@ -12,11 +12,11 @@ A cool thing to note is that GraphQL can be used with and on top of any data sou
 Let's say that we want to fetch a user's name. In a REST API, we have an endpoint that we can use to make a GET request. The endpoint may look like `/users/{id}/`. If we use a curl request to make a call and pass in `id` of a user, it will look like this - 
 
 
-` 
+```javascript 
 curl \
 -H "Content-Type: application/json" \
 https://www.example.com/api/users/123`
-`
+```
 
 Let's look at how GraphQL request will look - 
 1. The "GET" operation of REST is done by ["Query"](https://graphql.org/learn/queries/) in GraphQL. 
@@ -27,13 +27,13 @@ Let's look at how GraphQL request will look -
 
 A curl request to a GraphQL API looks like -
 
-`
+```javascript
 curl \
 -X POST \
 -H "Content-Type: application/json" \
 --data '{ "query": "{ user(id:123 ) { name } } " }' \
 https://www.example.com/graphql
-`
+```
 
 [Try out sample GraphQL requests here](https://graphqlzero.almansi.me/api)
 
