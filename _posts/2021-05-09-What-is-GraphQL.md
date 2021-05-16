@@ -3,11 +3,31 @@ layout: post
 title: What is GraphQL? 
 ---
 
-In simple terms, a GraphQL API is a way of getting data from any data source. If you are familiar with REST, GraphQL is an alternative to REST APIs and provides a new way of asking for data. GraphQL is a language to query an API and provides a [specification](https://spec.graphql.org/) for fulfilling those queries. The GraphQL spec provide a set of rules for defining what should happen when a GraphQL request is made. 
+In simple terms, a GraphQL API is a way of getting data from any data source. If you are familiar with REST, GraphQL is an alternative to REST APIs and provides a new way of asking for data. GraphQL provides a way to query an API and provides a server-side runtime for fulfilling those queries. The GraphQL spec provide a set of rules for defining what should happen when a GraphQL query or mutation is made. 
 
-A cool thing to note is that GraphQL can be used with and on top of any data sources such as REST APIs & databases and it can be plugged anywhere, built in any language and fit on top of any database and tech stack. GraphQL fits in both client and server side.
 
-**Making an API request**
+In technical terms, GraphQL is a query language for an API and provides a server-side runtime for fulfilling the query. GraphQL [specification](https://spec.graphql.org/) defines the set of rules for implementing a GraphQL API. 
+
+Important distinction to note is that GraphQL doesn't define the query language of your database. Unlike SQL, you don't have a query such as `SELECT * from users` for your database. Instead, GraphQL defines how to ask for data from your API. So you would say, "give me first names of all users". Specifically, the syntax of a GraphQL query looks like this - 
+
+```graphql
+query getUsers{
+    users {
+        firstname
+    }
+}
+```
+
+So, the `QL` in GraphQL means a query language for your API, not database. 
+
+
+A cool thing to note is that GraphQL can be used with and on top of any data sources such as REST APIs & database and it can be plugged anywhere, built in any language and fit on top of any database and tech stack, which means that you can use GraphQL on top of REST APIs and still get the benefits of GraphQL without having to tear down existing REST based architecture. 
+
+GraphQL fits on both client and server side layers. You build a GraphQL API on the server side and then consume this GraphQL API on the client side by firing GraphQL queries. There are tools such as [Apollo](https://www.apollographql.com/docs/tutorial/introduction/) that provide full stack solutions to help build GraphQL API on the server and consume it on the client side. 
+
+
+## REST vs GraphQL example: Making an API request
+
 
 Let's say that we want to fetch a user's name. In a REST API, we have an endpoint that we can use to make a GET request. The endpoint may look like `/users/{id}/`. If we use a curl request to make a call and pass in `id` of a user, it will look like this - 
 
@@ -38,13 +58,17 @@ https://www.example.com/graphql
 [Try out sample GraphQL requests here](https://graphqlzero.almansi.me/api)
 
 
+## TL;DR 
 In plain words, GraphQL is a syntax for asking for data. The big difference between REST and GraphQL is that in addition to making the call to the api endpoint and passing desired parameters, we also need to provide exactly what fields we want to access.
 
 In technical terms, GraphQL is a specification and provides a way for querying for data. The specification specifies what should happen when data is requested and mutated. GraphQL specifies a way to ask for data, and delivers exactly the data that was requested. Since it is a specification, GraphQL APIs can be created in language. GraphQL 
 
 
-Interested in some GraphQL FAQs?. [Check out this article on GraphQL misconceptions](https://dev.to/shrutikapoor08/what-is-graphql-the-misconceptions-57b9)
+---
 
---- 
-**On a personal note**
-I am organizing JS @ PayPal conference at PayPal, and I am stoked! JS @ PayPal is a FREE 3 day conference on May 19, 20, 21. For the first time, we are opening up this beloved internal conference to the public, and I invite you all to join! [Here is the link to register and see scheduled talks](bit.ly/jspaypal2021). We have got amazing talks and speakers lined up. I am really excited because we are bringing [Gather Town](gather.town) to this conference to emulate the experience of being in a conference. I hope to see you there! 
+Further Reading - 
+1. [What is GraphQL and why should you use it - Front End Happy Hour Podcast](https://frontendhappyhour.com/episodes/no-rest-with-quintessential-libations-graphql/)
+2. [Common GraphQL misconceptions](https://dev.to/shrutikapoor08/what-is-graphql-the-misconceptions-57b9)
+4. [Using GraphQL in an enterprise](https://www.youtube.com/watch?v=axQzCQ2Q4Rc)
+3. [Moving from Redux to GraphQL](https://www.youtube.com/watch?v=HL7gZnrEy68)
+5. [GraphQL & State Management](https://www.youtube.com/watch?v=7raJccyHh0Y)
