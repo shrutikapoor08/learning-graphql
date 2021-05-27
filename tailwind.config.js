@@ -5,7 +5,7 @@ module.exports = {
         './_posts/*.md',
         './*.html',
     ],
-    darkMode: media,
+    darkMode: false,
     theme: {
         extend: {},
         container: {

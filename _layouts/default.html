@@ -9,20 +9,9 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/tailwind.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/tailwind.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <style>
-        h1,
-        h2{
-            @apply text-2xl indigo-700;
-        }
-
-        .highlight {
-            @apply text-pink-600;
-        }
-    </style>
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 </head>
 
@@ -30,9 +19,9 @@
 <div class="wrapper-masthead">
         <div class="container">
         <header class="masthead clearfix">
-            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+            <a href="{{ site.baseurl }}/"><img class="rounded-full w-50 h-50" src="{{ site.avatar }}" /></a>
 
-            <div class="site-info">
+            <div class="site-info flex flex-col">
                 <h1 class="site-name text-lg"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
                 <p class="site-description">{{ site.description }}</p>
             </div>
@@ -46,7 +35,18 @@
 </div>
 
 <div id="main" role="main" class="container mx-auto flex flex-col justify-center">
-    {{ content }}
+
+    {% for post in site.posts %}
+    <div class="bg-gray-100 rounded-xl p-8 m-8 group hover:bg-pink-500 hover:shadow-2xl hover:border-transparent hover:scale-110 hover:text-white">
+        <a href="{{ post.post_url }}" class="group-hover:scale-110 group-hover:text-white">
+            <h2 class="text-3xl hover:text-white">
+                {{ post.title }}
+            </h2>
+        <p class="text-lg group-hover:text-white">{{ post.excerpt }}</p>
+        </a>
+    </div>
+    {% endfor %}
+
 </div>
 
 <div class="wrapper-footer">
