@@ -66,12 +66,10 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-
 plugins:
   - jekyll-postcss
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
   # Exclude these files from your production _site
 exclude:
@@ -80,3 +78,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - tailwind.config.js
+
