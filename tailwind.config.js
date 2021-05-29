@@ -10,10 +10,6 @@ module.exports = {
         extend: {},
         container: {
             center: true
-        },
-        textColor: {
-            'primary': '#374151',
-            'secondary': '#DB2777'
         }
     },
     variants: {},
