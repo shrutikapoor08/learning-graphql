@@ -4,7 +4,7 @@ title: GraphQL Misconceptions
 ---
 
 
-I love talking about GraphQL with people who have been working with GraphQL or thinking of adopting GraphQL. One common question people have is why would someone want to move to GraphQL from REST. There are a ton of resources out there that talk about the difference between REST and GraphQL and those are great to check out if you are interested in how those two are different. In this blog post, I want to answer some common misconceptions and questions asked about GraphQL.
+In this blog post, I want to answer some common misconceptions and questions asked about GraphQL.
 
 ## How do you benefit from GraphQL on the front end?
 As a Front End Engineer, I like working with a GraphQL API for the following reasons:

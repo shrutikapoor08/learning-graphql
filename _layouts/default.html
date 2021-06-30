@@ -135,40 +135,37 @@
                                     </div>
                                 </div>
                             </div>
-                        </main>
+                            <div class="lg:absolute inset-y-0 right-0 top-28 lg:w-1/2 ">
+                                <img alt=""
+                                     class="lg:h-72 w-auto sm:h-48 md:h-50 mx-auto rounded-full"
+                                     src="/assets/img/shruti-illustration.jpeg">
+                            </div>
+                    </div>
+                    </main>
+
+                    <div class="max-w-7xl mx-auto flex flex-row justify-center" id="main" role="main">
+
+                        {% for post in site.posts %}
+                        <div class="rounded-xl p-8 bg-gradient-to-br group hover:from-pink-500 to-purple-600 hover:shadow-2xl hover:border-transparent hover:scale-110 hover:text-white">
+                            <h2 class="text-3xl">
+                                {{ post.title }}
+                            </h2>
+                            {{ post.excerpt }}
+                        </div>
+                        {% endfor %}
                     </div>
                 </div>
-                <div class="lg:absolute inset-y-0 right-0 top-28 lg:w-1/2 ">
-                    <img alt=""
-                         class="lg:h-72 w-auto sm:h-48 md:h-50 mx-auto rounded-full"
-                         src="/assets/img/shruti-illustration.jpeg">
+            </div>
+
+            <div class="wrapper-footer">
+                <div class="container">
+                    <footer class="footer">
+                        {% include svg-icons.html %}
+                    </footer>
                 </div>
             </div>
-        </div>
-
-        <div class="max-w-7xl mx-auto flex flex-row justify-center" id="main" role="main">
-
-            {% for post in site.posts %}
-            <div class="rounded-xl p-8 bg-gradient-to-br group hover:from-pink-500 to-purple-600 hover:shadow-2xl hover:border-transparent hover:scale-110 hover:text-white">
-                <h2 class="text-3xl">
-                    {{ post.title }}
-                </h2>
-                {{ post.excerpt }}
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-
-<div class="wrapper-footer">
-    <div class="container">
-        <footer class="footer">
-            {% include svg-icons.html %}
-        </footer>
-    </div>
-</div>
 
 
-{% include analytics.html %}
+            {% include analytics.html %}
 </body>
 </html>
