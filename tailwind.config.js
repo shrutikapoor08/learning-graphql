@@ -1,4 +1,7 @@
 module.exports = {
+    corePlugins: {
+        preflight: false,
+    },
     purge: [
         './_includes/*.html',
         './_layouts/*.html',
