@@ -1,0 +1,54 @@
+Arguments: 
+  /Users/shrkapoor/.nvm/versions/node/v12.20.0/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:/Users/shrkapoor/.sdkman/candidates/sbt/current/bin:/Users/shrkapoor/.nvm/versions/node/v12.20.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/shrkapoor/Documents/sbt/bin:/Users/shrkapoor/Documents/webdriver:/Library/Apple/usr/bin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  12.20.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND npm.paypal.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26)
+
+npm manifest: 
+  {
+    "name": "learning-graphql",
+    "version": "1.0.0",
+    "description": "",
+    "main": "",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/shrutikapoor08/learning-graphql.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/shrutikapoor08/learning-graphql/issues"
+    },
+    "homepage": "https://github.com/shrutikapoor08/learning-graphql#readme",
+    "dependencies": {
+      "@tailwindcss/typography": "^0.4.1",
+      "jekyll": "^3.0.0-beta1",
+      "netlify-cli": "^3.37.36",
+      "postcss-import": "^14.0.2",
+      "autoprefixer": "^10.2.6",
+      "postcss": "^8.3.5",
+      "tailwindcss": "^2.1.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
