@@ -18,7 +18,7 @@
 
 <body>
 <div class="wrapper-masthead">
-    <div class="container">
+    <div class="container mx-auto">
         <!--        <header class="masthead clearfix">-->
         <!--            <a href="{{ site.baseurl }}/"><img class="rounded-full w-50 h-50" src="{{ site.avatar }}" /></a>-->
 
@@ -115,12 +115,11 @@
                             </nav>
                         </div>
 
-                        <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                        <main class="mt-10 mx-auto px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                             <div class="sm:text-center lg:text-left">
-                                <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                                    <span class="block font-mono font-normal text-pink-600 leading-normal xl:inline">Learning GraphQL</span>
-                                    <span class="block font-bold text-indigo-600 xl:inline">by Shruti Kapoor</span>
-                                </h1>
+                                <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl block font-mono font-normal text-pink-600 leading-normal xl:inline">Learning GraphQL</h1>
+                                    <h2 class="block font-bold text-indigo-600 text-3xl">by Shruti Kapoor</h2>
+
                                 <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                                     <div class="rounded-md shadow">
                                         <a class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
@@ -141,15 +140,15 @@
                                      class="lg:h-72 w-auto sm:h-48 md:h-50 mx-auto rounded-full"
                                      src="/assets/img/shruti-illustration.jpeg">
                             </div>
-                    </div>
-                    </main>
 
-                    <div class="max-w-7xl mx-auto flex flex-row justify-center" id="main" role="main">
+
+
+                    <div class="mx-auto flex flex-col justify-center" id="main" role="main">
 
                         {% for post in site.posts %}
-                        <div class="rounded-xl p-8 bg-gradient-to-br group hover:from-pink-500 to-purple-600 hover:shadow-2xl hover:border-transparent hover:scale-110 hover:text-white">
+                        <div class="rounded-xl mt-8 mb-8 pt-8 pb-8 bg-gradient-to-br">
                             <h2 class="text-3xl">
-                                {{ post.title }}
+                                <a class="hover:text-pink" href={{post_url}}> {{ post.title }} </a>
                             </h2>
                             {{ post.excerpt }}
                         </div>
@@ -157,6 +156,7 @@
                     </div>
                 </div>
             </div>
+            </main>
 
             <div class="wrapper-footer">
                 <div class="container">
