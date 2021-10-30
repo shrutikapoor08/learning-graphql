@@ -11,7 +11,7 @@ footer-links:
 disqus: null
 google_analytics: null
 url: null
-baseurl: null
+baseurl: ''
 permalink: '/:title/'
 version: v1.2.0
 kramdown:
@@ -21,6 +21,7 @@ kramdown:
     css_class: highlight
 sass:
   style: ':expanded'
+  directory:
 plugins:
   - jekyll-sitemap
   - jekyll-feed

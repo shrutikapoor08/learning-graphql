@@ -3,8 +3,7 @@ layout: post
 title: GraphQL Misconceptions
 ---
 
-
-In this blog post, I want to answer some common misconceptions and questions asked about GraphQL.
+In this blog post, I answer some common misconceptions and questions asked about GraphQL.
 
 ## How do you benefit from GraphQL on the front end?
 As a Front End Engineer, I like working with a GraphQL API for the following reasons:
