@@ -65,8 +65,8 @@
                     <div class="mx-auto flex flex-col justify-center" id="main" role="main">
                         {% for post in site.posts %}
                         <div class="rounded-xl mt-5 mb-2 bg-gradient-to-br">
-                            <h2 class="text-3xl  font-mono text-pink">
-                                <a class="text-pink hover:text-pink" href={{ site.baseurl }}{{ post.url }}> {{ post.title }} </a>
+                            <h2 class="text-3xl  font-mono text-pink ">
+                                <a class="text-pink hover:text-pink visited:text-pink" href={{ site.baseurl }}{{ post.url }}> {{ post.title }} </a>
                             </h2>
 
                             {{ post.excerpt }}

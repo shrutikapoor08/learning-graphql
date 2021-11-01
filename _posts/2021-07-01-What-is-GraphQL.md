@@ -1,6 +1,7 @@
 ---
 layout: post
 title: What is GraphQL? 
+excerpt: In simple terms, its like when you go to a pizza place, and order a "Make your own" pizza - you pick the base, the sauce, the cheese, the toppings and when the pizza is done, you get exactly what you asked for.
 ---
 
 In simple terms, its like when you go to a pizza place, and order a "Make your own" pizza - you pick the base, the sauce, the cheese, the toppings and when the pizza is done, you get exactly what you asked for. With REST, its like you pick a pizza from the predefined menu items. You may get the toppings you want, but you may also get other toppings (like tomatoes) you didn't ask for and sometimes, we will just have to manually pick the tomatoes out of it. 

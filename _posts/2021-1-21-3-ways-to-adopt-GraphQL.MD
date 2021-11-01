@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 3 ways to adopt GraphQL in a REST architecture
+excerpt: There are three main ways to integrate with GraphQL in an existing microservices architecture.
 ---
 
 There are three main ways to integrate with GraphQL in an existing microservices architecture:
@@ -12,7 +13,7 @@ There are three main ways to integrate with GraphQL in an existing microservices
 1. Build a GraphQL wrapper around REST microservices:
 This is a very common technique used in enterprises that have existing downstream REST microservices. A GraphQL layer is built on top of existing REST API. Further, there's two ways of implementing the GraphQL wrapper -
    1.1 -  The GraphQL layer acts as a pure orchestration layer. No business logic is added to the orchestration layer. The role of this layer is to wrap existing services and surface them as GraphQL endpoint. This layer is usually very lightweight.
-    1.2 - Build a GraphQL layer around new logic and existing microservices. In this technique, existing REST services are wrapped in a GraphQL resolver, and new logic is put in GraphQL layer as well. This is a very useful technique when new logic needs to be added   <TODO- rephrase>
+    1.2 - Build a GraphQL layer around new logic and existing microservices. In this technique, existing REST services are wrapped in a GraphQL resolver, and new logic is put in GraphQL layer as well. This is a very useful technique when new logic needs to be added
 
 
 2. Build a REST wrapper around GraphQL microservices:

@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Getting started with GraphQL
+excerpt: GraphQL is a way of asking for data from API - a query language for API. It offers a flexible way of asking for data, and you can get as much or as little data as you need. 
+
 ---
 
 GraphQL is a way of asking for data from API - a query language for API. It offers a flexible way of asking for data, and you can get as much or as little data as you need. 
-
 A typical GraphQL implementation involves GraphQL on the server side (GraphQL API) and GraphQL on the client side (to talk to GraphQL APIs). A lot of different tools can be used to build a full-stack GraphQL application - such as Prisma, Apollo, Express, Hasura.
 At its core, it is just an API served over HTTP. You can send a curl command to talk to a GraphQL API. 
 
